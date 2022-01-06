@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Button({
-    children,
-    isLoading,
-    onPress,
-  }) {
+  children,
+  isLoading,
+  onPress,
+}) {
   return (
     <button
       disabled={isLoading}
