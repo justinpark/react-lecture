@@ -4,11 +4,23 @@ import Button from './Button';
 import ToggleButton from './ToggleButton';
 
 function RowBComponent() {
-  return <Button>버튼1</Button>;
+  return (
+    <tr>
+      <td>
+        <Button>버튼1</Button>
+      </td>
+    </tr>
+  );
 }
 
 function RowCComponent() {
-  return <Button>버튼2</Button>;
+  return (
+    <tr>
+      <td>
+        <Button>버튼2</Button>
+      </td>
+    </tr>
+  );
 }
 
 function TableComponent() {
