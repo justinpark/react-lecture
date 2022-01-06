@@ -1,6 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Button from "./Button";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Button from './Button';
+import ToggleButton from './ToggleButton';
 
 function RowBComponent() {
   return <Button>버튼1</Button>;
@@ -40,7 +41,7 @@ class HomePageComponent extends React.Component {
     return (
       <div>
         <TableComponent />
-        <Button onPress={this.toggleLoading}>상태 변경</Button>
+        <ToggleButton onPress={this.toggleLoading} />
       </div>
     );
   }
