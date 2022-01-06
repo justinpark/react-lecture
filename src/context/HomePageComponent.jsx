@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
-import ToggleButton from './ToggleButton';
 
 function RowBComponent() {
   return <Button>버튼1</Button>;
@@ -20,7 +19,7 @@ function TableComponent() {
   );
 }
 
-class HomePageComponent extends React.Component {
+class HomePageComponent extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -41,7 +40,7 @@ class HomePageComponent extends React.Component {
     return (
       <div>
         <TableComponent />
-        <ToggleButton onPress={this.toggleLoading} />
+        <Button onPress={this.toggleLoading}>상태 변경</Button>
       </div>
     );
   }
