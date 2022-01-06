@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-import Button from './Button';
+import React from "react";
+import PropTypes from "prop-types";
+import Button from "./Button";
 
 function RowBComponent() {
   return <Button>버튼1</Button>;
@@ -19,7 +19,7 @@ function TableComponent() {
   );
 }
 
-class HomePageComponent extends PureComponent {
+class HomePageComponent extends React.Component {
   constructor(props) {
     super(props);
 
